@@ -25,6 +25,7 @@ body{
     align-items: center;
     background: rgba(0, 0, 0, 0.5);
     overflow: hidden;
+    border-radius: 20px;
 }
 .box::before{
     content: '';
@@ -33,6 +34,14 @@ body{
     height: 150%;
     background: linear-gradient(#00ccff, #d400d4);
     animation: animate 4s linear infinite;
+}
+
+.box::after{
+    content: '';
+    position: absolute;
+    inset: 4px;
+    background: #0e1538;
+    border-radius: 20px;
 }
 
 @keyframes animate{
